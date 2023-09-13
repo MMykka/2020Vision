@@ -8,8 +8,8 @@ export default function Home() {
         <Hero/>
       <Products/>
       <BestSeller/>
-      {/* <About/>
-      <Footer/> */}
+      <About/>
+     
     </section>
   )
 }

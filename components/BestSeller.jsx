@@ -14,10 +14,22 @@ const BestSeller = () => {
             <p className='text-[18px] font-medium text-gray-500'>There are many variations of passages of lorem</p>
         </div>
 
-          <div className='flex justify-center gap-[2rem] mt-5 text-[18px] font-medium text-gray-500' >
-            <button onClick={() => setActive("first")}>NEW ARRIVALS</button>
-            <button onClick={() => setActive("second")}>EYEGLASSES</button>
-            <button onClick={() => setActive("third")}>SUNGLASSES</button>
+          <div className='flex justify-center gap-[2rem] mt-5 text-[16px] font-[400] text-gray-500 ' >
+            <button onClick={() => setActive("first")} className={`${
+              active === "first"
+              ? " text-black border-solid border-b-2 border-black font-[500]"
+              :" text-gray-500 "
+            } `}>NEW ARRIVALS</button>
+            <button onClick={() => setActive("second")} className={`${
+              active === "second"
+              ? " text-black border-solid border-b-2 border-black font-[500]"
+              :" text-gray-500 "
+            } `}>EYEGLASSES</button>
+            <button onClick={() => setActive("third")} className={`${
+              active === "third"
+              ? " text-black border-solid border-b-2 border-black font-[500]"
+              :" text-gray-500 "
+            } `}>SUNGLASSES</button>
           </div>
           <div className='flex flex-wrap justify-center items-center gap-3 mx-auto'>
               {active === "first" && NewArrival.map((New) => (
@@ -29,9 +41,9 @@ const BestSeller = () => {
               {active === "third" && SunGlasse.map((sun) => (
                 <SunGlasses name={sun.name} description={sun.description} price={sun.price}/>
               ))}
-          </div>
+          </div>   
 
-        
+          
     </section>
   )
 }

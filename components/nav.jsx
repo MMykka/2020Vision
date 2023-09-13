@@ -3,6 +3,8 @@
 import React, { useState } from 'react'
 import Link from "next/link";
 import { navLinks } from './constants';
+import { visionlogo } from './images';
+import Image from 'next/image';
 
 const Nav = () => {
     const [toggle, setToggle] = useState(false);
@@ -11,7 +13,7 @@ const Nav = () => {
 
   return (
     <nav
-     className="w-full flex items-center py-7 sm:px-16 px-6 "
+     className="w-full flex items-center py-4 sm:px-16 px-6 "
     >
     <div
     className='w-full flex justify-between items-center  mx-auto  first-letter:duration-300'
@@ -24,7 +26,7 @@ const Nav = () => {
           window.scrollTo(0,0);
         }}
         >
-          
+          <Image src={visionlogo} alt='logo' width={50} height={15} className='object-contain'/>
         </Link>
         <ul className='list-none hidden lg:flex flex-row mr-[13rem] gap-8'>
           {navLinks.map((link) => (

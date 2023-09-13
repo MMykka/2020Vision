@@ -15,7 +15,7 @@ const Products = () => {
         <div className="w-1/2 h-full object-cover">
           <Image src={image} objectFit='contain' className='object-cover h-full'/>
         </div>
-    </div>
+    </div>  
   )
 
    

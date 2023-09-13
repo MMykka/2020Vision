@@ -3,8 +3,8 @@ import React from 'react'
 export const EyeGlasses = ({name,description,price}) => {
   return (
     <div className="p-5 rounded-2xl sm:w-[360px] w-full">
-          <div className="relative w-full h-[230px]">
-              <img src={"https://images.pexels.com/photos/131018/pexels-photo-131018.jpeg?auto=compress&cs=tinysrgb&w=600"} alt={name} className="w-full h-full object-cover rounded-2xl"/>
+          <div className="relative w-full h-[230px] scale-125">
+              <img src={"oakley.png"} alt={name} className="w-full h-full object-cover rounded-2xl"/>
           </div>
           
           <div className="mt-1 ">
