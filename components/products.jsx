@@ -8,8 +8,8 @@ const Products = () => {
   const Sectioncards = ({image,name,title,color}) => (
     <div className={`mx-auto flex justify-between px-2  ${color}`} >
         <div className='w-1/2 flex flex-col gap-3 items-start justify-center p-2'>
-          <p>{title}</p>
-          <h1 className='text-[40px]'>{name}</h1>
+          <p className='font-[500]'>{title}</p>
+          <h1 className='sm:text-[40px] text-[30px]'>{name}</h1>
           <button className='text-start'>View more</button>
         </div>
         <div className="w-1/2 h-full object-cover">

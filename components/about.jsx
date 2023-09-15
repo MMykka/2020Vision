@@ -6,57 +6,53 @@ const About = () => {
   return (
 
    <section className=' relative '>
-     <div className='app__header app__wrapper relative max-w-7xl mx-auto'>
-    <div className='app__wrapper_img justify-start'>
-      <img src={'https://images.pexels.com/photos/1018134/pexels-photo-1018134.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'} alt='header img'/>
-    </div>
-
-    <div className='app__wrapper_info mt-20 '>
-      <div className='aboslute -translate-x-[6rem]'>
-      <h1 className='text-[45px]'>Best glasses <br/><span className={`font-medium border-b-4 border-sky-300`}>Collection</span> of 2023.</h1>
-      <p className=' text-gray-500' style={{ margin: '2rem 0' }}>Sit tellus lobortis sed senectus vivamus molestie. Condimentum volutpat morbi facilisis quam scelerisque sapien. Et, penatibus aliquam amet tellus Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ullam dolor commodi aliquam, impedit voluptatum nemo nobis praesentium ducimus a totam consectetur, quia cum. Quisquam reiciendis dolorum aut iste repellat?</p>
-      <div>
-        <ul className='marker:text-sky-300  list-disc flex flex-wrap gap-40 font-[400]  text-gray-500'>
-          <div className='flex gap-5 flex-col'>
-          <li className='m-1'> New color combinations</li>
-          <li className='m-1'>Wide selection of lenses</li>
+     <div className="flex lg:flex-row flex-col gap-20 lg:gap-10 justify-center items-center max-w-6xl mx-auto">
+     <div
+          className="p-5 w-[400px] h-[200px] sm:w-[500px] sm:h-[300px] lg:w-[900px] lg:h-[400px] xl:w-[1400px] xl:h-[400px] lg:translate-x-10"
+          >
+            <img className=" w-[100%] " src="https://images.pexels.com/photos/1018134/pexels-photo-1018134.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="mika"/>
           </div>
-          <div className='flex gap-5 flex-col'>
-          <li className='m-1'>Hight quality materials </li>
-          <li className='m-1'>Convinient carrying case</li>
+          <div className="flex-col lg:-translate-x-[4rem] w-full text-center lg:text-left p-5">
+          <h1 className='text-[45px]'>Best glasses <br/><span className={`font-medium border-b-4 border-sky-300`}>Collection</span> of 2023.</h1>
+      <p className=' text-gray-500 mt-5  mx-auto lg:mx-0' >Sit tellus lobortis sed senectus vivamus molestie.Condimentum volutpat morbi facilisis quam scelerisque sapien. Et, penatibus aliquam amet </p>
+      
+            <div className='flex mt-10 gap-5 justify-center lg:justify-start'>
+            <button type='button' className='px-5 py-3 bg-sky-300  text-[15px] text-white font-bold  '>CONTACT US</button>
+            <button type='button' className='px-7 py-3 border-2 font-medium'>CLICK ME</button>
+            </div>
           </div>
-        </ul>
-      </div>
-      <div className='flex mt-5 gap-5'>
-      <button type='button' className='px-5 py-3 bg-sky-300  text-[15px] text-white font-bold  '>ADD TO CART</button>
-      <button type='button' className='px-7 py-3 border-2 font-medium'>View more</button>
-      </div>
-      </div>
-    </div>
-  </div>
+          
+        </div>
 
-        <div className='w-full h-screen bg-slate-100 relative -translate-y-5 -z-10 '>
+        {/* about banner */}
+
+        <div className='w-full sm:h-screen h-full bg-slate-100 relative -translate-y-5 -z-10 mt-10 sm:mt-0'>
             <div className="max-w-7xl h-full mx-auto flex flex-col items-center justify-center">
-            <div className='relative bg-hero h-[50vh] w-full mx-auto flex  justify-between items-center'>
+            <div className='relative bg-hero sm:h-[50vh] w-full mx-auto flex sm:flex-row flex-col sm:justify-between justify-center items-center'>
               <div className='px-20 flex flex-col '>
-                <h1 className='font-[400] text-[50px] leading-[44px] '>Gordon glasses <br/> True Modern Classics</h1>
-                <p className='mt-10 '>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique fuga laborum magni possimus. Ad cumque molestias, sit nulla quisquam tenetur atque officiis quasi nam tempora dolorem perspiciatis aliquam harum at.</p>
-                <div className='flex mt-10 gap-5'>
+                <h1 className='w-full font-[400] text-[40px] sm:text-[50px] sm:leading-[60px] mt-10 leading-[50px] text-center sm:text-left'>Gordon glasses <br className='hidden sm:block'/> True Modern Classics</h1>
+                <p className='mt-10 text-center sm:text-left'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique fuga laborum magni possimus. Ad cumque molestias, sit nulla quisquam tenetur atque officiis quasi nam tempora dolorem perspiciatis aliquam harum at.</p>
+                <div className='flex mt-10 gap-5 justify-center sm:justify-start '>
                  <button type='button' className='px-7 py-3 bg-sky-300  text-[15px] text-white font-bold  '>BUY NOW</button>
                  <button type='button' className='px-7 py-3 border-2 font-medium'>READ MORE</button>
                 </div>
               </div>
-              <div className='w-[600px] h-full mr-10'>
+
+              <div className='sm:hidden w-[300px] h-[150px] mt-10 mx-auto'>
+              <img className=' w-full h-full object-cover scale-150 opacity-80' src={'FerrariGlasses.png'} alt='header img'/>
+            </div>  
+
+              <div className=' hidden sm:block sm:w-[600px] h-full sm:mr-10 mx-auto'>
               <img src="woman.png" alt="" className='w-full h-full' />
               </div> 
               
             </div>
-            <div className='w-[500px] h-[150px] -translate-y-[5rem] '>
+            <div className='hidden sm:block w-[500px] h-[150px] -translate-y-[5rem] '>
               <img className=' w-full h-full object-cover scale-150 opacity-80' src={'FerrariGlasses.png'} alt='header img'/>
             </div>  
             
 
-            <div className='flex gap-5  text-sky-300'>
+            <div className='flex gap-5  text-sky-300 flex-wrap justify-center sm:justify-start'>
                 <div className='flex justify-center items-center gap-4 p-5 py-10'>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M6.429 9.75L2.25 12l4.179 2.25m0-4.5l5.571 3 5.571-3m-11.142 0L2.25 7.5 12 2.25l9.75 5.25-4.179 2.25m0 0L21.75 12l-4.179 2.25m0 0l4.179 2.25L12 21.75 2.25 16.5l4.179-2.25m11.142 0l-5.571 3-5.571-3" />
@@ -98,39 +94,31 @@ const About = () => {
                 <h1 className="text-black font-[500] text-[17px]">All Sizes</h1>
                 <p className="text-gray-500" >Lorem, ipsum Lorem, ipsum.</p>
               </div>
-                </div>
-
-                
-                
+                </div>    
             </div>
             </div>
         </div>
 
+        {/* end about banner */}
 
-  <div className='app__header app__wrapper px-16 py-16 max-w-7xl mx-auto'>
-    <div className='app__wrapper_info  mt-20 '>
-      <h1 className='text-[45px]'>Best selection of <br/><span className={`font-medium border-b-4 border-sky-300`}>High Quality</span> lenses.</h1>
-      <p className=' text-gray-500' style={{ margin: '2rem 0' }}>Sit tellus lobortis sed senectus vivamus molestie. Condimentum volutpat morbi facilisis quam scelerisque sapien. Et, penatibus aliquam amet </p>
-      
-      <div className='flex gap-2 '>
-      <div className='w-[150px] h-[100px]'><img className='w-full h-full object-cover scale-125' src={'FerrariGlasses.png'} alt='header img'/></div>
-      <div className='w-[150px] h-[100px]'><img className='w-full h-full object-cover scale-125' src={'oakley.png'} alt='header img'/></div>
-      <div className='w-[150px] h-[100px]'><img className='w-full h-full object-cover scale-125 -translate-y-1' src={'tedbaker.png'} alt='header img'/></div>
-      </div>
-    
-      <div className='flex mt-10 gap-5'>
-      <button type='button' className='px-5 py-3 bg-sky-300  text-[15px] text-white font-bold  '>CONTACT US</button>
-      <button type='button' className='px-7 py-3 border-2 font-medium'>CLICK ME</button>
-      </div>
-      
-      
-    </div>
 
-    <div className='app__wrapper_img justify-end'>
-      <img src={'https://images.pexels.com/photos/1018134/pexels-photo-1018134.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'} alt='header img'/>
-    </div>
-  </div>
+            <div className="flex lg:flex-row flex-col gap-0 lg:gap-10 justify-center items-center max-w-6xl mx-auto  ">
+                <div className="flex-col lg:translate-x-10 w-full text-center lg:text-left p-5">
+                <h1 className='text-[45px]'>Best selection of <br/><span className={`font-medium border-b-4 border-sky-300`}>High Quality</span> lenses.</h1>
+              <p className=' text-gray-500 mt-5  mx-auto lg:mx-0' >Sit tellus lobortis sed senectus vivamus molestie.Condimentum volutpat morbi facilisis quam scelerisque sapien. Et, penatibus aliquam amet </p>
+      
+            <div className='flex mt-10 gap-5 justify-center lg:justify-start'>
+            <button type='button' className='px-5 py-3 bg-sky-300  text-[15px] text-white font-bold  '>CONTACT US</button>
+            <button type='button' className='px-7 py-3 border-2 font-medium'>CLICK ME</button>
+            </div>
+          </div>
 
+          <div
+          className="relative p-5 -z-10 w-[400px] h-[100%] sm:w-[500px] sm:h-[100%] lg:w-[900px] lg:h-[100%] xl:w-[1400px] xl:h-[100%] lg:-translate-x-10"
+          >
+            <img className=" w-[100%] " src="https://images.pexels.com/photos/1018134/pexels-photo-1018134.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="photo"/>
+          </div>
+        </div>
     <div>
       
     </div>

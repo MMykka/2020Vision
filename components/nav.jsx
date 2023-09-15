@@ -5,6 +5,9 @@ import Link from "next/link";
 import { navLinks } from './constants';
 import { visionlogo } from './images';
 import Image from 'next/image';
+import { motion } from "framer-motion";
+
+import { fadeIn, navVariants, slideIn, staggerContainer } from "./utils/motion";
 
 const Nav = () => {
     const [toggle, setToggle] = useState(false);
@@ -20,13 +23,13 @@ const Nav = () => {
     >
         <Link 
         href='/' 
-        className="duration-300"
+        className="duration-300 hidden lg:block"
         onClick={() => {
           setActive("");
           window.scrollTo(0,0);
         }}
         >
-          <Image src={visionlogo} alt='logo' width={50} height={15} className='object-contain'/>
+            <Image src={visionlogo} width={70} height={20}/> 
         </Link>
         <ul className='list-none hidden lg:flex flex-row mr-[13rem] gap-8'>
           {navLinks.map((link) => (
@@ -44,6 +47,74 @@ const Nav = () => {
 
           ))}
         </ul>
+
+        
+
+        <motion.div
+        variants={staggerContainer()}
+        initial='hidden'
+        whileInView='show'
+        viewport={{once: true, amount: 0.25}}
+        className='lg:hidden flpex flex-1 justify-start items-center pr-2  sm:mr-[4rem] mr-0 text-[#111]'>
+          <div 
+          className={`w-[28px] h-[28px]  object-contain cursor-pointer duration-300 text-[#000] ${toggle && 'hidden'}`}
+           onClick={() => setToggle(!toggle)}>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+          <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12" />
+        </svg>
+        
+
+          </div>
+          
+          <motion.div 
+           variants={slideIn('left', 'spring', 0.1 , 0.5)}
+           initial="hidden"
+           whileInView="show"
+          className={`${!toggle ? "hidden" : "flex"} p-6 absolute top-0 right-0 w-full h-screen bg-[#272727] dark:bg-[#181823] z-10 flex justify-center items-center opacity-90`}
+          >
+          
+                {/* inside mobile nav bar */}
+            <img 
+                src={toggle ? 'close.svg' : 'menu.svg'}
+                alt='menu'
+                className='w-[28px] h-[28px] object-contain cursor-pointer absolute top-5 right-7 '
+                onClick={() => setToggle(!toggle)}
+                />
+                <ul className='list-none flex justify-end items-start flex-col gap-20'>
+                  
+                {navLinks.map((Link, index) =>(
+                  <motion.li
+                  variants={fadeIn('right', 'spring', 0.3 * index, 0.75)}
+                  initial="hidden"
+                  whileInView="show"
+                  key={Link.id}
+                  className={`${
+                    active === Link.title
+                    ? "dark:text-[#537FE7]" 
+                    :"text-[#E9F8F9]"
+                  } font-poppins font-medium cursor-pointer text-[36px]`}
+                  onClick={() => {
+                    setActive(Link.title);
+                    setToggle(!toggle);
+                  }}
+                  >
+                    <a href={`#${Link.id}`}>{Link.title}</a>
+                  </motion.li>
+                ))}
+              </ul>
+              </motion.div>
+        </motion.div>
+
+        <Link 
+        href='/' 
+        className="duration-300 lg:hidden block"
+        onClick={() => {
+          setActive("");
+          window.scrollTo(0,0);
+        }}
+        >
+            <Image src={visionlogo} width={70} height={20}/> 
+        </Link>
 
         <div className='flex gap-4 lg:justify-start text-[#272727]'>
             <p>Login/register</p>
