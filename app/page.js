@@ -4,7 +4,7 @@ import { Nav, About, Hero, Footer, Products,BestSeller } from '@/components'
 
 export default function Home() {
   return (
-    <section className='relative z-0  mx-auto'>
+    <section className='relative z-0  mx-auto overflow-hidden'>
         <Hero/>
       <Products/>
       <BestSeller/>
