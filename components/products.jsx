@@ -10,7 +10,7 @@ const Products = () => {
         <div className='w-1/2 flex flex-col gap-3 items-start justify-center p-2'>
           <p className='font-[500]'>{title}</p>
           <h1 className='sm:text-[40px] text-[30px]'>{name}</h1>
-          <button className='text-start'>View more</button>
+          
         </div>
         <div className="w-1/2 h-full object-cover">
           <Image src={image} objectFit='contain' className='object-cover h-full'/>
