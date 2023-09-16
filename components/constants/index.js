@@ -25,15 +25,15 @@ export const navLinks = [
   ];
   export const Sections = [
     {
-      name: "Garamond",
-      title:"WOMAN SUNGLASSES",
+      name: "GARAMOND",
+      title:"WOMEN SUNGLASSES",
       image: Woman,
       color: "beige"
       
     },
     {
-      name: "Wayfarer",
-      title:"MAN SUNGLASSES",
+      name: "WAYFARER",
+      title:"MEN SUNGLASSES",
       image: Man,
       color: "blue"
     },

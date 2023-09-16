@@ -11,7 +11,7 @@ const Footer = () => {
       <div className='flex max-md:flex-col flex-wrap justify-between gap-5 sm:px-16 px-6 py-10'>
         <div className='flex flex-col justify-start items-start gap-6'>
             <Image src={visionlogo} alt='logo' width={90} height={18} className='object-contain'/>
-            <p className='text-base text-gray-700'>2020Vision 2023 <br/> All rights reserved &copy;</p>
+            <p className='text-base text-gray-700'>2020 Vision<br/> ALL RIGHT RESERVED &copy;</p>
             <p>Phone Number: xx xxx xxx</p>
             <p>Address: xx xxx xxx</p>
             <p>Email: xx xxx xxx</p>
@@ -40,10 +40,10 @@ const Footer = () => {
                 <p>2020Vision 2023. All rights reserved &copy;</p>
                 <div className='footer__copyrights-link'>
                   <Link href={'/'} className='text-gray-500'>
-                    Privacy Policy
+                    Privacy PolicY
                   </Link>
                   <Link href={'/'} className='text-gray-500'>
-                    Terms Of Use
+                    Terms Of Service
                   </Link>
               </div>
         </div>

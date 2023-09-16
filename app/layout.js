@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className=''>
       <CardProvider>
-      <Nav/>
+      <Nav />
       {children}
       <Footer/>
       </CardProvider>
