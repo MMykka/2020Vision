@@ -28,7 +28,7 @@ const About = () => {
 
         <div className='w-full sm:h-screen h-full bg-slate-100 relative -translate-y-5 -z-10 mt-10 sm:mt-0'>
             <div className="max-w-7xl h-full mx-auto flex flex-col items-center justify-center">
-            <div className='relative bg-hero sm:h-[50vh] w-full mx-auto flex sm:flex-row flex-col sm:justify-between justify-center items-center'>
+            <div className='relative bg-hero sm:h-[50vh] w-full mx-auto hidden sm:flex sm:flex-row flex-col sm:justify-between justify-center items-center'>
               <div className='px-20 flex flex-col '>
                 <h1 className='w-full font-[400] text-[40px] sm:text-[50px] sm:leading-[60px] mt-10 leading-[50px] text-center sm:text-left'>Gordon glasses <br className='hidden sm:block'/> True Modern Classics</h1>
                 <p className='mt-10 text-center sm:text-left'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique fuga laborum magni possimus. Ad cumque molestias, sit nulla quisquam tenetur atque officiis quasi nam tempora dolorem perspiciatis aliquam harum at.</p>
