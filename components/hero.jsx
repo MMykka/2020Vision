@@ -6,8 +6,8 @@ import { HO,LO } from './images';
 const Hero = () => {
   return (
     <section className='relative w-full pb-10 mx-auto'>
-      <div className='bg-[#e4d9b962] h-[60vh]  w-full relative mx-auto flex justify-center items-center'>
-      <Image src={LO} className='top-0 left-0 w-[700px]  h-[100%] object-cover ' />
+      <div className='bg-[#e4d9b962z] h-[60vh]  w-full relative mx-auto flex justify-center items-center'>
+      <Image alt='logo' src={LO} className='top-0 left-0 w-[700px]  h-[100%] object-cover ' />
       <div className='flex flex-col absolute inset-0 items-center text-center'>
         <div className='absolute top-[70px]  flex flex-col items-center justify-center'>
           <p className='font-semibold text-[14px] sm:text-[15px] text-[#b6a381]'>POLARIZED SUNGLASSES</p>

@@ -42,103 +42,139 @@ export const navLinks = [
 
   export const NewArrival = [
     {
+      id: 1,
       name: "glasses1",
       description:"description",
       price: "999$",
+      image: "FerrariGlasses.png",
     },
     {
+      id: 2,
       name: "glasses2",
       description:"description",
       price: "999$",
+      image: "FerrariGlasses.png",
     },
     {
+      id: 3,
       name: "glasses3",
       description:"description",
       price: "999$",
+      image: "FerrariGlasses.png",
     },
     {
+      id: 4,
       name: "glasses4",
       description:"description",
       price: "999$",
+      image: "FerrariGlasses.png",
       
     },
     {
+      id: 5,
       name: "glasses5",
       description:"description",
       price: "999$",
+      image: "FerrariGlasses.png",
     },
     {
+      id: 6,
       name: "glasses6",
       description:"description",
       price: "999$",
+      image: "FerrariGlasses.png",
     },
 
   ];
   export const EyeGlasse = [
     {
-      name: "glasses1",
+      id: 7,
+      name: "glasses7",
       description:"description",
       price: "999$",
+      image: "oakley.png",
     },
     {
-      name: "glasses2",
+      id: 8,
+      name: "glasses8",
       description:"description",
       price: "999$",
+      image: "oakley.png",
     },
     {
-      name: "glasses3",
+      id: 9,
+      name: "glasses9",
       description:"description",
       price: "999$",
+      image: "oakley.png",
     },
     {
-      name: "glasses4",
+      id: 10,
+      name: "glasses10",
       description:"description",
       price: "999$",
+      image: "oakley.png",
       
     },
     {
-      name: "glasses5",
+      id: 11,
+      name: "glasses11",
       description:"description",
       price: "999$",
+      image: "oakley.png",
     },
     {
-      name: "glasses6",
+      id: 12,
+      name: "glasses12",
       description:"description",
       price: "999$",
+      image: "oakley.png",
     },
 
   ];
   export const SunGlasse = [
     {
-      name: "glasses1",
+      id: 13,
+      name: "glasses13",
       description:"description",
       price: "999$",
+      image: "tedbaker.png"
     },
     {
-      name: "glasses2",
+      id: 14,
+      name: "glasses14",
       description:"description",
       price: "999$",
+      image: "tedbaker.png"
     },
     {
-      name: "glasses3",
+      id: 15,
+      name: "glasses15",
       description:"description",
       price: "999$",
+      image: "tedbaker.png"
     },
     {
-      name: "glasses4",
+      id: 16,
+      name: "glasses16",
       description:"description",
       price: "999$",
+      image: "tedbaker.png"
       
     },
     {
-      name: "glasses5",
+      id: 17,
+      name: "glasses17",
       description:"description",
       price: "999$",
+      image: "tedbaker.png",
     },
     {
-      name: "glasses6",
+      id: 18,
+      name: "glasses18",
       description:"description",
       price: "999$",
+      image: "tedbaker.png"
     },
 
   ];

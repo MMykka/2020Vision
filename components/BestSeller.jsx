@@ -5,8 +5,13 @@ import { useState } from 'react'
 import { NewArrival, EyeGlasse, SunGlasse } from './constants'
 import { EyeGlasses, NewArrivals, SunGlasses } from '.'
 
+const newProducts = NewArrival;
+const eyeProducts = EyeGlasse;
+const SunProducts = SunGlasse;
+
 const BestSeller = () => {
   const [active, setActive] = useState("first")
+
   return (
     <section className='max-w-7xl mx-auto relative flex justify-center px-16 py-10 flex-col border-b-2 border-t-2'>
         <div className='flex flex-col justify-center items-center'>
@@ -32,14 +37,14 @@ const BestSeller = () => {
             } `}>SUNGLASSES</button>
           </div>
           <div className='flex flex-wrap justify-center items-center gap-3 mx-auto'>
-              {active === "first" && NewArrival.map((New) => (
-                <NewArrivals name={New.name} description={New.description} price={New.price}/>
+              {active === "first" && newProducts.map((product) => (
+                <NewArrivals product={product}/>
               ))}
-              {active === "second" && EyeGlasse.map((eye) => (
-                <EyeGlasses name={eye.name} description={eye.description} price={eye.price}/>
+              {active === "second" && eyeProducts.map((product) => (
+                <EyeGlasses product={product}/>
               ))}
-              {active === "third" && SunGlasse.map((sun) => (
-                <SunGlasses name={sun.name} description={sun.description} price={sun.price}/>
+              {active === "third" && SunProducts.map((product) => (
+                <SunGlasses product={product}/>
               ))}
           </div>   
 
