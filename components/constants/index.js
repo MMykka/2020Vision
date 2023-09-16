@@ -23,6 +23,29 @@ export const navLinks = [
         title: "Contact",
     },
   ];
+
+  export const mobileLinks = [
+    {
+      id: "home",
+      title: "Home",
+    },
+    {
+      id: "shop",
+      title: "Shop",
+    },
+    {
+      id: "about",
+      title: "About",
+    },
+    {
+        id: "Blog",
+        title: "Blog",
+    },
+    {
+        id: "contact",
+        title: "Contact",
+    },
+  ];
   export const Sections = [
     {
       name: "GARAMOND",

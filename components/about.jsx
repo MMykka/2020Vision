@@ -8,7 +8,7 @@ const About = () => {
    <section className=' relative '>
      <div className="flex lg:flex-row flex-col gap-20 lg:gap-10 justify-center items-center max-w-6xl mx-auto">
      <div
-          className="p-5 w-[400px] h-[200px] sm:w-[500px] sm:h-[300px] lg:w-[900px] lg:h-[400px] xl:w-[1400px] xl:h-[400px] lg:translate-x-10"
+          className="p-5 w-full h-[200px] sm:w-[500px] sm:h-[300px] lg:w-[900px] lg:h-[400px] xl:w-[1400px] xl:h-[400px] lg:translate-x-10"
           >
             <img className=" w-[100%] " src="https://images.pexels.com/photos/1018134/pexels-photo-1018134.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="mika"/>
           </div>
@@ -114,7 +114,7 @@ const About = () => {
           </div>
 
           <div
-          className="relative p-5 -z-10 w-[400px] h-[100%] sm:w-[500px] sm:h-[100%] lg:w-[900px] lg:h-[100%] xl:w-[1400px] xl:h-[100%] lg:-translate-x-10"
+          className="relative p-5 -z-10 w-full h-[100%] sm:w-[500px] sm:h-[100%] lg:w-[900px] lg:h-[100%] xl:w-[1400px] xl:h-[100%] lg:-translate-x-10"
           >
             <img className=" w-[100%] " src="https://images.pexels.com/photos/1018134/pexels-photo-1018134.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="photo"/>
           </div>
