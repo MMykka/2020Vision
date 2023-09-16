@@ -9,7 +9,7 @@ const Hero = () => {
       <div className='bg-[#e4d9b962] h-[60vh]  w-full relative mx-auto flex justify-center items-center'>
       <Image alt='logo' src={LO} className=' w-[1000px] sm:w-[750px]  h-[100%] object-cover ' />
       <div className='flex flex-col absolute inset-0 items-center text-center'>
-        <div className='absolute top-[100px] xl:top-[80px] flex flex-col items-center justify-center'>
+        <div className='absolute top-[90px] xl:top-[80px] flex flex-col items-center justify-center'>
           <p className='font-semibold text-[14px] sm:text-[15px] text-[#b6a381]'>POLARIZED SUNGLASSES</p>
           <h1 className='font-normal text-[35px] sm:text-[40px] lg:text-[50px] xl:text-[60px]'>Sandstorm Sunglasses</h1>
          <div className='w-[400px] sm:w-[500px] xl:w-[600px] 2xl:w-[700px]  h-[180px] mt-2 object-center'>
