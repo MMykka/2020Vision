@@ -40,7 +40,7 @@ const Footer = () => {
                 <p>2020Vision 2023. All rights reserved &copy;</p>
                 <div className='footer__copyrights-link'>
                   <Link href={'/'} className='text-gray-500'>
-                    Privacy PolicY
+                    Privacy Policy
                   </Link>
                   <Link href={'/'} className='text-gray-500'>
                     Terms Of Service

@@ -68,28 +68,28 @@ export const navLinks = [
       id: 1,
       name: "glasses1",
       description:"description",
-      price: "999$",
+      price: 999,
       image: "FerrariGlasses.png",
     },
     {
       id: 2,
       name: "glasses2",
       description:"description",
-      price: "999$",
+      price: 999,
       image: "FerrariGlasses.png",
     },
     {
       id: 3,
       name: "glasses3",
       description:"description",
-      price: "999$",
+      price: 999,
       image: "FerrariGlasses.png",
     },
     {
       id: 4,
       name: "glasses4",
       description:"description",
-      price: "999$",
+      price: 999,
       image: "FerrariGlasses.png",
       
     },
@@ -97,45 +97,45 @@ export const navLinks = [
       id: 5,
       name: "glasses5",
       description:"description",
-      price: "999$",
+      price: 999,
       image: "FerrariGlasses.png",
     },
     {
       id: 6,
       name: "glasses6",
       description:"description",
-      price: "999$",
+      price: 999,
       image: "FerrariGlasses.png",
     },
 
   ];
-  export const EyeGlasse = [
+  export const SunGlasse = [
     {
       id: 7,
       name: "glasses7",
       description:"description",
-      price: "999$",
+      price:999,
       image: "oakley.png",
     },
     {
       id: 8,
       name: "glasses8",
       description:"description",
-      price: "999$",
+      price: 999,
       image: "oakley.png",
     },
     {
       id: 9,
       name: "glasses9",
       description:"description",
-      price: "999$",
+      price: 999,
       image: "oakley.png",
     },
     {
       id: 10,
       name: "glasses10",
       description:"description",
-      price: "999$",
+      price: 999,
       image: "oakley.png",
       
     },
@@ -143,45 +143,45 @@ export const navLinks = [
       id: 11,
       name: "glasses11",
       description:"description",
-      price: "999$",
+      price: 999,
       image: "oakley.png",
     },
     {
       id: 12,
       name: "glasses12",
       description:"description",
-      price: "999$",
+      price: 999,
       image: "oakley.png",
     },
 
   ];
-  export const SunGlasse = [
+  export const EyeGlasse = [
     {
       id: 13,
       name: "glasses13",
       description:"description",
-      price: "999$",
+      price: 999,
       image: "tedbaker.png"
     },
     {
       id: 14,
       name: "glasses14",
       description:"description",
-      price: "999$",
+      price: 999,
       image: "tedbaker.png"
     },
     {
       id: 15,
       name: "glasses15",
       description:"description",
-      price: "999$",
+      price: 999,
       image: "tedbaker.png"
     },
     {
       id: 16,
       name: "glasses16",
       description:"description",
-      price: "999$",
+      price: 999,
       image: "tedbaker.png"
       
     },
@@ -189,14 +189,14 @@ export const navLinks = [
       id: 17,
       name: "glasses17",
       description:"description",
-      price: "999$",
+      price: 999,
       image: "tedbaker.png",
     },
     {
       id: 18,
       name: "glasses18",
       description:"description",
-      price: "999$",
+      price: 999,
       image: "tedbaker.png"
     },
 
@@ -206,9 +206,9 @@ export const navLinks = [
     {
       title: "About",
       links: [
-        { title: "How it works", url: "/" },
+        { title: "How It Works", url: "/" },
         { title: "Featured", url: "/" },
-        { title: "Partnership", url: "/" },
+        { title: "PartnerShip", url: "/" },
         { title: "Bussiness Relation", url: "/" },
       ],
     },
@@ -218,13 +218,12 @@ export const navLinks = [
         { title: "Events", url: "/" },
         { title: "Blog", url: "/" },
         { title: "Podcast", url: "/" },
-        { title: "Invite a friend", url: "/" },
+        { title: "Invite A Friend", url: "/" },
       ],
     },
     {
       title: "Socials",
       links: [
-        { title: "Discord", url: "/" },
         { title: "Instagram", url: "/" },
         { title: "Twitter", url: "/" },
         { title: "Facebook", url: "/" },

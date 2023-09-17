@@ -11,8 +11,18 @@ module.exports = {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
         'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-        "hero": "url('/images/background.jpg')",
+        "hero": "url('/images/watermark.jpg')",
       },
+      backgroundSize: {
+        'auto': 'auto',
+        'cover': 'cover',
+        'contain': 'contain',
+        '20': '20%',
+        '40': '40%',
+        '50': '50%',
+        '80': '80%',
+        '16': '4rem',
+      }
     },
   },
   plugins: [],

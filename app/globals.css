@@ -9,11 +9,24 @@
 }
 
 
+
+
 .beige {
   background-color: #eeebe2;
 }
 .bg-hero {
+  background-image: url('../components/images/new.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  
+
+}
+.bg-heroo {
   background-image: url('../components/images/background.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  
+
 }
 
 .blue {
