@@ -20,7 +20,7 @@ const Nav = () => {
 
   return (
     <nav
-     className="w-full flex items-center py-4 sm:px-16 px-6 overflow-hidden fixed top-0 left-0 z-10 bg-white"
+     className="w-full flex items-center py-4 sm:px-16 px-6 overflow-hidden fixed top-0 left-0 z-10 lg:bg-white"
     >
     <div
     className=' w-full flex justify-between items-center  mx-auto  duration-300'
@@ -65,7 +65,7 @@ const Nav = () => {
         
 
           </div>
-          <Link 
+          {/* <Link 
         href='/' 
         className="duration-300 lg:hidden block "
         onClick={() => {
@@ -74,7 +74,7 @@ const Nav = () => {
         }}
         >
             <Image alt='logo' src={visionlogo} width={70} height={20}/> 
-        </Link>
+        </Link> */}
           
           <motion.div 
            variants={slideIn('left', 'spring', 0.1 , 0.8)}

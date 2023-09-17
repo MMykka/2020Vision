@@ -7,7 +7,7 @@ import { footerLinks } from './constants'
 
 const Footer = () => {
   return (
-    <footer className='flex flex-col text-black mt-5 border-t border-gray-100'>
+    <footer className='flex flex-col text-black mt-5 border-t border-gray-100 relative top-[90px]'>
       <div className='flex max-md:flex-col flex-wrap justify-between gap-5 sm:px-16 px-6 py-10'>
         <div className='flex flex-col justify-start items-start gap-6'>
             <Image src={visionlogo} alt='logo' width={90} height={18} className='object-contain'/>
