@@ -151,12 +151,12 @@ const Nav = () => {
             onClick={() => setToggleCart(!toggleCart)}
             />
         </div>
-                <div className='mt-10 flex flex-col gap-y-2 h-[520px] lg:h-[640px] overflow-y-auto overflow-x-hidden border-b'>
+                <div className='mt-10 flex flex-col gap-y-2 h-[420px] lg:h-[640px] overflow-y-auto overflow-x-hidden border-b'>
                   {cart.map((item) => (
                    <CartProducts item={item} key={item.id}/>
                   ))}
                 </div>
-                <div className='flex flex-col gap-y-3 py-4 mt-4'>
+                <div className='flex flex-col gap-y-3 py-4 mt-4 '>
                   <div className='flex w-full justify-between items-center'>
                     <div className='uppercase font-semibold'>
                       <span className='mr-2'>Total:</span>$ {total}
@@ -167,7 +167,8 @@ const Nav = () => {
                     </svg>
                     </div>
                   </div>
-                  <button className='w-full h-full px-10 py-5 blue rounded-2xl font-medium'>CHECKOUT</button>
+                  <button className='w-full h-auto px-10 py-5 blue rounded-2xl font-medium'>CHECKOUT</button>
+                  
                 </div>
               </motion.div>
     </div>
