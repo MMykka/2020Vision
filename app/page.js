@@ -7,7 +7,7 @@ import { NewArrival } from '@/components/constants'
 export default function Home() {
 
   return (
-    <section className='relative z-0 w-full h-full mx-auto top-[100px] overflow'>
+    <section className='relative z-0 w-full h-full mx-auto lg:top-[100px] overflow'>
      
       <Hero/>
       <Products/>

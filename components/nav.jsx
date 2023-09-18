@@ -20,7 +20,7 @@ const Nav = () => {
 
   return (
     <nav
-     className="w-full py-4 sm:px-16 px-6 overflow-hidden fixed top-0 left-0 z-10 bg-white"
+     className="w-full py-4 sm:px-16 px-6 overflow-hidden fixed top-0 left-0 z-10 bg-[#e4d9b962] lg:bg-white"
     >
     <div
     className=' w-full flex justify-between items-center  mx-auto  duration-300'
