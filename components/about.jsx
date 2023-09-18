@@ -6,7 +6,7 @@ const About = () => {
   return (
 
    <section className=' relative '>
-     <div className="flex lg:flex-row flex-col gap-20 lg:gap-10 justify-center items-center max-w-6xl mx-auto">
+     <div className="flex lg:flex-row w-full flex-col gap-20 lg:gap-10 justify-center items-center max-w-6xl mx-auto">
      <div
           className="p-5 w-full h-[200px] sm:w-[500px] sm:h-[300px] lg:w-[900px] lg:h-[400px] xl:w-[1400px] xl:h-[400px] "
           >
