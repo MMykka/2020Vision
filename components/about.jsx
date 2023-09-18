@@ -8,9 +8,9 @@ const About = () => {
    <section className=' relative '>
      <div className="flex lg:flex-row flex-col gap-20 lg:gap-10 justify-center items-center max-w-6xl mx-auto">
      <div
-          className="p-5 w-full h-[200px] sm:w-[500px] sm:h-[300px] lg:w-[900px] lg:h-[400px] xl:w-[1400px] xl:h-[400px] lg:translate-x-10"
+          className="p-5 w-full h-[200px] sm:w-[500px] sm:h-[300px] lg:w-[900px] lg:h-[400px] xl:w-[1400px] xl:h-[400px] "
           >
-            <img className=" w-[100%] " src="https://images.pexels.com/photos/1018134/pexels-photo-1018134.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="mika"/>
+            <img className=" w-[100%] " src="glasses5.png" alt="mika"/>
           </div>
           <div className="flex-col lg:-translate-x-[4rem] w-full text-center lg:text-left p-5">
           <h1 className='text-[45px]'>Best glasses <br/><span className={`font-medium border-b-4 border-sky-300`}>Collection</span> of 2023.</h1>
@@ -29,12 +29,12 @@ const About = () => {
         <div className='w-full sm:h-screen h-full bg-slate-100 relative -translate-y-5 -z-10 mt-10 sm:mt-0'>
             <div className="max-w-7xl h-full mx-auto flex flex-col items-center justify-center">
             <div className='relative bg-heroo sm:h-[50vh] w-full mx-auto hidden sm:flex sm:flex-row flex-col sm:justify-between justify-center items-center'>
-              <div className='px-20 flex flex-col '>
-                <h1 className='w-full font-[400] text-[40px] sm:text-[50px] sm:leading-[60px] mt-10 leading-[50px] text-center sm:text-left'>Gordon glasses <br className='hidden sm:block'/> True Modern Classics</h1>
-                <p className='mt-10 text-center sm:text-left'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique fuga laborum magni possimus. Ad cumque molestias, sit nulla quisquam tenetur atque officiis quasi nam tempora dolorem perspiciatis aliquam harum at.</p>
+              <div className='px-20 flex flex-col items-center justify-center'>
+                <h1 className='w-full font-[400] text-[40px] sm:text-[50px] sm:leading-[60px] mt-10 leading-[50px] text-center '>Gordon glasses <br className='hidden sm:block'/> True Modern Classics</h1>
+                <p className='mt-10 text-center text-[18px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique fuga laborum magni possimus. Ad cumque molestias, sit nulla quisquam tenetur atque officiis quasi nam tempora dolorem perspiciatis aliquam harum at.</p>
                 <div className='flex mt-10 gap-5 justify-center sm:justify-start '>
                  <button type='button' className='px-7 py-3 bg-sky-300  text-[15px] text-white font-bold  '>BUY NOW</button>
-                 <button type='button' className='px-7 py-3 border-2 font-medium'>READ MORE</button>
+                 <button type='button' className='px-7 py-3 border-2 font-medium text-white'>READ MORE</button>
                 </div>
               </div>
 
@@ -42,14 +42,12 @@ const About = () => {
               <img className=' w-full h-full object-cover scale-150 opacity-80' src={'FerrariGlasses.png'} alt='header img'/>
             </div>  
 
-              <div className=' hidden sm:block sm:w-[600px] h-full sm:mr-10 mx-auto'>
-              <img src="woman.png" alt="" className='w-full h-full' />
-              </div> 
+            <div className='hidden sm:block w-full h-[150px] '>
+              <img className=' w-full h-full object-cover opacity-80 scale-110' src={'FerrariGlasses.png'} alt='header img'/>
+            </div>  
+            
               
             </div>
-            <div className='hidden sm:block w-[500px] h-[150px] -translate-y-[5rem] '>
-              <img className=' w-full h-full object-cover scale-150 opacity-80' src={'FerrariGlasses.png'} alt='header img'/>
-            </div>  
             
 
             <div className='flex gap-5  text-sky-300 flex-wrap justify-center sm:justify-start'>
@@ -116,7 +114,7 @@ const About = () => {
           <div
           className="relative p-5 -z-10 w-full h-[100%] sm:w-[500px] sm:h-[100%] lg:w-[900px] lg:h-[100%] xl:w-[1400px] xl:h-[100%] lg:-translate-x-10"
           >
-            <img className=" w-[100%] " src="https://images.pexels.com/photos/1018134/pexels-photo-1018134.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="photo"/>
+            <img className=" w-[100%] " src="bgglassestwo.jpg" alt="photo"/>
           </div>
         </div>
     <div>

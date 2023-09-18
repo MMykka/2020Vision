@@ -3,7 +3,7 @@ import glasses from './bgglasses.jpg'
 import Man from './Man.png'
 import Woman from './woman.png'
 import HO from './HO.png'
-import visionlogo from './visionlogo.jpg'
+import visionlogo from './logo2.png'
 import background from './background.jpg'
 
 
