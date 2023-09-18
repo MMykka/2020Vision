@@ -20,7 +20,7 @@ const Nav = () => {
 
   return (
     <nav
-     className="w-full flex items-center py-4 sm:px-16 px-6 overflow-hidden fixed top-0 left-0 z-10 lg:bg-white"
+     className="w-full flex items-center py-4 sm:px-16 px-6 overflow-hidden fixed top-0 left-0 z-10 bg-white"
     >
     <div
     className=' w-full flex justify-between items-center  mx-auto  duration-300'
@@ -67,7 +67,7 @@ const Nav = () => {
           </div>
           <Link 
         href='/' 
-        className="duration-300 lg:hidden block "
+        className="duration-300 lg:hidden block ml-10"
         onClick={() => {
           setActive("");
           window.scrollTo(0,0);
@@ -151,7 +151,7 @@ const Nav = () => {
             onClick={() => setToggleCart(!toggleCart)}
             />
         </div>
-                <div className='mt-10 flex flex-col gap-y-2 h-[420px] lg:h-[640px] overflow-y-auto overflow-x-hidden border-b'>
+                <div className='mt-10 flex flex-col gap-y-2 h-[420px] lg:h-[540px] overflow-y-auto overflow-x-hidden border-b'>
                   {cart.map((item) => (
                    <CartProducts item={item} key={item.id}/>
                   ))}
