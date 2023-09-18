@@ -11,7 +11,7 @@ const Hero = () => {
         <div className=' flex flex-col items-center justify-center'>
           <p className='font-semibold text-[14px] sm:text-[15px] text-[#b6a381]'>POLARIZED SUNGLASSES</p>
           <h1 className='font-normal text-[35px] sm:text-[40px] lg:text-[50px] xl:text-[60px]'>Sandstorm Sunglasses</h1>
-         <div className='w-full h-[200px] lg:h-[250px] mt-2 object-center'>
+         <div className='w-full h-[200px] lg:h-[230px] mt-2 object-center'>
          <img src="glasses4.png" alt="" className='w-full h-full object-cover opacity-80' />
          </div>
         </div>
