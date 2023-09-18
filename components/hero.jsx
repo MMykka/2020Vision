@@ -15,7 +15,7 @@ const Hero = () => {
          <img src="glasses4.png" alt="" className='w-full h-full object-cover opacity-80' />
          </div>
         </div>
-        <div className='flex  gap-5 justify-center mt-20 lg:mt-10 '>
+        <div className='flex  gap-5 justify-center mt-20 lg:mt-5 '>
             <button className='px-5 py-2 text-white font-bold bg-[#ccba99] text-[13px]'>OPEN SHOP</button>
             <button className='border-solid border-b-2 font-medium text-[#555353] border-[#ccba99]'>View more</button>
           </div>

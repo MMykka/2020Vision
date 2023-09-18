@@ -55,7 +55,7 @@ const Nav = () => {
         initial='hidden'
         whileInView='show'
         viewport={{once: true, amount: 0.25}}
-        className='overflow-hidden lg:hidden flex flex-1 justify-start gap-x-20 items-center pr-2   mr-0 text-[#111]'>
+        className='overflow-hidden lg:hidden flex flex-1 justify-start gap-x-20 items-center pr-2  sm:mr-[4rem] mr-0 text-[#111]'>
           <div 
           className={`w-[28px] h-[28px]  object-contain cursor-pointer duration-300 text-[#000] ${toggle && 'hidden'}`}
            onClick={() => setToggle(!toggle)}>
