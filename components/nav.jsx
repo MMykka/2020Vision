@@ -66,7 +66,7 @@ const Nav = () => {
         </Link>
         <div className='flex gap-4 lg:justify-start text-[#272727] '>
             <p className='hidden lg:block'>LOGIN/REGISTER</p>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+            <svg  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="hidden  lg:block w-6 h-6">
             <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
             </svg>
             <div className='flex gap-2 ' onClick={() => setToggleCart(!toggleCart)}>
@@ -85,7 +85,7 @@ const Nav = () => {
         initial='hidden'
         whileInView='show'
         viewport={{once: true, amount: 0.25}}
-        className='overflow-hidden lg:hidden flex flex-1 justify-start gap-x-20 items-center pr-2  sm:mr-[4rem] mr-0 text-[#111]'>
+        className='overflow-hidden w-full lg:hidden flex flex-1 justify-start gap-x-20 items-center pr-2  sm:mr-[4rem] mr-0 text-[#111]'>
           
           <motion.div 
            variants={slideIn('left', 'spring', 0.1 , 0.8)}
