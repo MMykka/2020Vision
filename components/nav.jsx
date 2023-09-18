@@ -19,7 +19,10 @@ const Nav = () => {
 
 
   return (
-    <nav
+    <motion.nav
+    variants={navVariants}
+    initial="hidden"
+    whileInView="show"
      className="w-full py-4 sm:px-16 px-6 overflow-hidden fixed top-0 left-0 z-10 bg-[#e4d9b962] lg:bg-white"
     >
     <div
@@ -171,7 +174,7 @@ const Nav = () => {
                   
                 </div>
               </motion.div>
-    </nav>
+    </motion.nav>
   )
 }
 
