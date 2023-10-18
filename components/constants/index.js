@@ -146,13 +146,7 @@ export const navLinks = [
       price: 999,
       image: "oakley.png",
     },
-    {
-      id: 12,
-      name: "glasses12",
-      description:"description",
-      price: 999,
-      image: "oakley.png",
-    },
+    
 
   ];
   export const EyeGlasse = [

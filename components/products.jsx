@@ -5,26 +5,29 @@ import { glasses, sunglasses, Man, Woman} from './images'
 
 const Products = () => {
 
-  const Sectioncards = ({image,name,title,color}) => (
-    <div className={`mx-auto flex justify-between px-2  ${color}`} >
-        <div className='w-1/2 flex flex-col gap-3 items-start justify-center p-2'>
-          <p className='font-[500] '>{title}</p>
-          <h1 className='sm:text-[40px] text-[25px]'>{name}</h1>
-          
+  const Sectioncard1 = () => (
+    <div className='w-full xl:w-[500px] h-[500px] bg-prod1 bg-cover rounded-xl'>
+        <div className='flex flex-col items-start justify-end h-full w-full text-[35px] text-white font-medium p-5 px-10 tracking-wider'>
+          <p>How Clear Can Glasses Be?</p>
+          <button className='bg-black mt-4 py-2 px-10 text-white font-bold text-[17px] rounded-xl'>Explore</button>
         </div>
-        <div className="w-1/2 h-full object-cover">
-          <Image alt='logo' src={image} objectFit='contain' className='object-cover h-full'/>
+    </div>  
+  )
+  const Sectioncard2 = () => (
+    <div className=' w-full xl:w-[500px] h-[500px] bg-prod2 bg-cover rounded-xl'>
+        <div className='flex flex-col items-start justify-end h-full w-full text-[35px] text-white font-medium p-5 px-10 tracking-wider'>
+          <p>Is Glasses For The <br className='hidden sm:block'/> Best?</p>
+          <button className='bg-black mt-4 py-2 px-10 text-white font-bold text-[17px] rounded-xl'>Explore</button>
         </div>
     </div>  
   )
 
    
   return (
-    <section className='w-full relative flex flex-col justify-center px-16 py-6 mx-auto'>
-        <div className='flex mx-auto gap-4 sm:flex-row flex-col'>
-          {Sections.map((card) => (
-            <Sectioncards key={card.name} {...card}/>
-          ))}
+    <section className='w-full relative flex flex-col justify-center px-5 sm:px-16 py-16 mx-auto'>
+        <div className='flex mx-auto gap-[55px] lg:flex-row flex-col'>
+            <Sectioncard1/>
+            <Sectioncard2/>
         </div>
     </section>
   )

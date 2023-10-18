@@ -1,39 +1,70 @@
 'use client'
 
 import Image from 'next/image';
-import React from 'react';
+import React, { useState } from 'react';
 import { HO,LO } from './images';
 import { fadeIn } from './utils/motion';
 import { motion } from "framer-motion";
+import { EffectFade, Autoplay,Pagination } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+import 'swiper/css';
+import 'swiper/css/autoplay';
+import 'swiper/css/effect-fade';
+import 'swiper/css/pagination';
+
+
+
+
+const SliderTab = ({name, price,image}) => {
+  return (
+    <div>
+      <div className='flex gap-x-20 lg:flex-row flex-col w-full items-center bg-[#eaeaea] bg-hero  lg:bg-cover bg-contain mt-10'>
+          <div className=' w-full lg:w-[40%] flex flex-col gap-4'>
+            <h1 className='text-[30px] sm:text-[50px] font-bold text-center sm:text-left'>{name}</h1>
+            <p className='font-medium w-full text-center sm:text-left text-[13px] sm:text-[16px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita suscipit impedit ratione repellendus illo et ipsam cupiditate eius vero nulla Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure, consequuntur.</p>
+            <p className='font-medium text-[17px] text-center sm:text-left'>$ {price}</p>
+            <div className='flex gap-x-4 sm:justify-start justify-center'>
+            <button  className="px-6 py-3 bg-black text-white font-bold rounded-xl ">
+            EXPLORE
+            </button>
+            </div>
+          </div>
+          <div className='flex w-full  lg:w-[60%] opacity-80'>
+            <img src={image} alt="" className='w-full'/>
+          </div>
+        </div>
+    </div>
+  )
+}
 
 
 const Hero = () => {
   return (
-    <section className='relative w-full pb-10 mx-auto'>
-      <div className='bg-[#e4d9b962] h-screen lg:h-[60vh] w-full relative mx-auto flex justify-center items-center bg-hero bg-contain'>
-      <div className='flex flex-col items-center justify-center text-center w-full  h-full'>
-        <motion.div
-        initial="hidden"
-        whileInView="show"
-        viewport={{once: true, amount: 0.25}}
-        variants={fadeIn("up", "spring", 0.5, 0.9)}
-        className=' flex flex-col items-center justify-center'>
-          <p className='font-semibold text-[14px] sm:text-[15px] text-[#b6a381]'>POLARIZED SUNGLASSES</p>
-          <h1 className='font-normal text-[35px] sm:text-[40px] lg:text-[50px] xl:text-[60px]'>Sandstorm Sunglasses</h1>
-         <div className='w-full h-[200px] lg:h-[250px] mt-2 object-center'>
-         <img src="glasses4.png" alt="" className='w-full h-full object-cover opacity-80' />
-         </div>
-        </motion.div>
-        <motion.div 
-        initial="hidden"
-        whileInView="show"
-        variants={fadeIn("up", "spring", 0.6, 0.8)}
-        viewport={{once: true, amount: 0.25}}
-        className='flex  gap-5 justify-center mt-20 lg:mt-5 '>
-            <button className='px-5 py-2 text-white font-bold bg-[#ccba99] text-[13px]'>OPEN SHOP</button>
-            <button className='border-solid border-b-2 font-medium text-[#555353] border-[#ccba99]'>View more</button>
-          </motion.div>
-      </div>
+    <section className='relative max-w-[2000px] mx-auto bg-[#eaeaea] rounded-xl'>
+      <div className='h-screen lg:h-[85vh] mx-auto max-w-[1500px] px-7 lg:px-20 flex items-center'>
+        <Swiper
+        slidesPerView={1}
+        modules={[Autoplay, EffectFade, Pagination]}
+        pagination={{ clickable: true, dynamicBullets: true, }}
+        effect='fade'
+        loop={true}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+
+        >
+        <SwiperSlide>
+          <SliderTab name="sunglasses" price="200" image="glasses4.png"/>
+        </SwiperSlide>
+        <SwiperSlide>
+          <SliderTab name="sunglasses2" price="100" image="glasses3.png"/>
+        </SwiperSlide>
+        <SwiperSlide>
+          <SliderTab name="sunglasses3" price="300" image="glasses5.png"/>
+        </SwiperSlide>
+        </Swiper>
       </div>
 
 

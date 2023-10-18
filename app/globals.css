@@ -15,20 +15,26 @@
   background-color: #eeebe2;
 }
 .bg-hero {
-  background-image: url('../components/images/new.png');
+  background-image: url('../components/images/WM3.png');
   background-repeat: no-repeat;
   background-position: center;
-  
-
 }
-.bg-heroo {
-  background-image: url('../components/images/bgtwo.jpg');
+.bg-prod1 {
+  background-image: url('../components/images/crystal2.jpg');
   background-repeat: no-repeat;
-background-position: center;
-  
-
+  background-position: center;
+}
+.bg-prod2 {
+  background-image: url('../components/images/book.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
+.bg-hold {
+  background-image: url('../components/images/holding.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
 .blue {
   background-color: rgba(176, 217, 255, 0.671);
 }

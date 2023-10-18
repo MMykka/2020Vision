@@ -7,7 +7,10 @@ import BestSeller from './BestSeller'
 import NewArrivals from "./NewArrivals";
 import SunGlasses from './SunGlasses';
 import { EyeGlasses } from "./EyeGlasses";
+import End from "./End";
+import BestSellerTwo from "./BestSellerTwo";
+import BestSellerThree from "./BestSellerThree";
 
 
 
-export {Nav,About,Products,Hero,Footer,BestSeller,NewArrivals,SunGlasses,EyeGlasses}
+export {Nav,About,Products,Hero,Footer,BestSeller,NewArrivals,SunGlasses,EyeGlasses,BestSellerTwo,BestSellerThree, End}
