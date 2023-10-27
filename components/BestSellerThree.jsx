@@ -9,19 +9,86 @@ const newProducts = NewArrival;
 const eyeProducts = EyeGlasse;
 const SunProducts = SunGlasse;
 
-const BestSellerThree = () => {
-  return (
-    <section className="max-w-[1440px] mx-auto relative flex justify-center px-10 sm:px-16 xl:px-0 py-10 flex-col">
-      <div className="flex flex-col justify-center items-center">
-        <h1 className="text-center text-[26px] border-b-2 font-medium">
-          Shop
-        </h1>
-      </div>
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { EffectCoverflow, Pagination, Autoplay } from 'swiper/modules';
+import { useSwiper } from 'swiper/react';
 
-      <div className="flex flex-wrap justify-center items-center gap-20 gap-y-10 mx-auto mt-10">
-        {eyeProducts.map((product) => (
-          <EyeGlasses product={product} />
-        ))}
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/effect-coverflow';
+import "swiper/css/autoplay";
+
+
+
+const BestSellerThree = () => {
+  const swiper = useSwiper();
+
+  const handlePrevButtonClick = () => {
+    console.log('Previous button clicked');
+    if (swiper) {
+      swiper.slidePrev();
+    }
+  };
+
+  const handleNextButtonClick = () => {
+    if (swiper) {
+      swiper.slideNext();
+    }
+  };
+
+  return (
+    <section className="max-w-[100%] mx-auto relative bg-black">
+      <div className="relative w-full px-5 res1:px-0  flex justify-center items-center py-20 transitio-all duration-125 ">
+        <Swiper
+        spaceBetween={0}
+        effect={'coverflow'}
+        centeredSlides={true}
+        slidesPerView={1}
+        loop={true}
+        coverflowEffect={{
+          rotate: 0,
+          stretch: 0,
+          depth: 150,
+          modifier: 1,
+          slideShadows: true,
+        }}   
+        modules={[EffectCoverflow, Autoplay]}
+        autoplay={{
+          delay: 1500,
+          disableOnInteraction: false,
+        }}
+        breakpoints={{
+          400: {
+            slidesPerView: 2,
+            
+          },
+          800: {
+            slidesPerView: 3,
+            
+          },
+          1024:{
+            slidesPerView: 4,
+
+          },
+          1300:{
+            slidesPerView: 5,
+          }
+          
+          
+
+        }}
+        >
+          {SunProducts.map((product) => (
+                <SwiperSlide key={product.name} className="transition-all duration-125">
+                   {({ isActive }) => (
+                      <SunGlasses product={product} isActive={isActive}/>
+                    )}
+                </SwiperSlide>
+              ))}
+              
+        </Swiper>
+            
+        
       </div>
     </section>
   );

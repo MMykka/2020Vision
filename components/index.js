@@ -10,7 +10,9 @@ import { EyeGlasses } from "./EyeGlasses";
 import End from "./End";
 import BestSellerTwo from "./BestSellerTwo";
 import BestSellerThree from "./BestSellerThree";
+import EndTwo from "./EndTwo";
 
 
 
-export {Nav,About,Products,Hero,Footer,BestSeller,NewArrivals,SunGlasses,EyeGlasses,BestSellerTwo,BestSellerThree, End}
+
+export {Nav,About,Products,Hero,Footer,BestSeller,NewArrivals,SunGlasses,EyeGlasses,BestSellerTwo,BestSellerThree, End, EndTwo}

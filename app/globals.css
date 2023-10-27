@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -9,13 +10,28 @@
 }
 
 
+@font-face {
+  font-family: newyork;
+  src: url(../public/NewYork\ PERSONAL\ USE.otf);
+}
+@font-face {
+  font-family: vogue;
+  src: url(../public/Vogue.ttf);
+}
 
 
+.vogue {
+  font-family: vogue;
+}
+
+.newyork {
+  font-family: newyork;
+}
 .beige {
   background-color: #eeebe2;
 }
 .bg-hero {
-  background-image: url('../components/images/WM3.png');
+  background-image: url('../components/images/bggirl.jpg');
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -235,20 +251,5 @@
 
   .p__opensans {
     font-size: 14px;
-  }
-}
-
-@media screen and (max-width: 450px) {
-  .p__opensans {
-    font-size: 12px;
-  }
-
-  .p__cormorant {
-    font-size: 19px;
-  }
-
-  .headtext__cormorant {
-    font-size: 45px;
-    line-height: 70px;
   }
 }

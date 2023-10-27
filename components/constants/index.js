@@ -2,26 +2,22 @@ import { Man, Woman } from "../images";
 export{ Man,Woman}
 
 export const navLinks = [
-    {
-      id: "home",
-      title: "Home",
-    },
-    {
-      id: "shop",
-      title: "Shop",
-    },
-    {
-      id: "about",
-      title: "About",
-    },
-    {
-        id: "Blog",
-        title: "Blog",
-    },
-    {
-        id: "contact",
-        title: "Contact",
-    },
+  {
+    id: "home",
+    title: "Home",
+  },
+  {
+    id: "Featured",
+    title: "Featured",
+  },
+  {
+    id: "Accessories",
+    title: "Accessories",
+  },
+  {
+      id: "contact",
+      title: "Contact",
+  },
   ];
 
   export const mobileLinks = [
@@ -30,16 +26,12 @@ export const navLinks = [
       title: "Home",
     },
     {
-      id: "shop",
-      title: "Shop",
+      id: "Featured",
+      title: "Featured",
     },
     {
-      id: "about",
-      title: "About",
-    },
-    {
-        id: "Blog",
-        title: "Blog",
+      id: "Accessories",
+      title: "Accessories",
     },
     {
         id: "contact",
@@ -146,6 +138,77 @@ export const navLinks = [
       price: 999,
       image: "oakley.png",
     },
+    {
+      id: 11,
+      name: "glasses11",
+      description:"description",
+      price: 999,
+      image: "oakley.png",
+    },
+    {
+      id: 11,
+      name: "glasses11",
+      description:"description",
+      price: 999,
+      image: "oakley.png",
+    },
+    {
+      id: 11,
+      name: "glasses11",
+      description:"description",
+      price: 999,
+      image: "oakley.png",
+    },
+    {
+      id: 11,
+      name: "glasses11",
+      description:"description",
+      price: 999,
+      image: "oakley.png",
+    },
+    {
+      id: 11,
+      name: "glasses11",
+      description:"description",
+      price: 999,
+      image: "oakley.png",
+    },
+    {
+      id: 11,
+      name: "glasses11",
+      description:"description",
+      price: 999,
+      image: "oakley.png",
+    },
+    {
+      id: 11,
+      name: "glasses11",
+      description:"description",
+      price: 999,
+      image: "oakley.png",
+    },
+    {
+      id: 11,
+      name: "glasses11",
+      description:"description",
+      price: 999,
+      image: "oakley.png",
+    },
+    {
+      id: 11,
+      name: "glasses11",
+      description:"description",
+      price: 999,
+      image: "oakley.png",
+    },
+    {
+      id: 11,
+      name: "glasses11",
+      description:"description",
+      price: 999,
+      image: "oakley.png",
+    },
+    
     
 
   ];

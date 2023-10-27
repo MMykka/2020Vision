@@ -20,12 +20,12 @@ const Nav = () => {
 
   return (
     <motion.nav
-     className="w-full py-2 sm:px-16 px-6 overflow-hidden fixed top-0 left-0 z-10 bg-[#eaeaea]"
+     className="w-full py-2 sm:px-16 px-6 overflow-hidden fixed top-0 left-0 z-10 bg-white"
     >
     <div
-    className=' w-full flex justify-between items-center  mx-auto  duration-300 '
+    className=' w-full flex justify-between lg:justify-center lg:p-5 items-center  mx-auto  duration-300 '
     >
-        <Link 
+        {/* <Link 
         href='/' 
         className="duration-300 hidden lg:block"
         onClick={() => {
@@ -34,8 +34,8 @@ const Nav = () => {
         }}
         >
             <Image alt='logo' src={visionlogo} width={70} height={20}/> 
-        </Link>
-        <ul className='list-none hidden lg:flex flex-row text-[15px] gap-[60px] font-[500]'>
+        </Link> */}
+        <ul className='list-none hidden lg:flex flex-row text-[15px] gap-[60px] font-[500] '>
           {navLinks.map((link) => (
             <li 
             key={link.id}
@@ -64,7 +64,7 @@ const Nav = () => {
         >
             <Image alt='logo' src={visionlogo} width={70} height={20}/> 
         </Link>
-        <div className='flex gap-4 lg:justify-start text-[#272727] '>
+        {/* <div className='flex gap-4 lg:justify-start text-[#272727] '>
             <svg  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="hidden  lg:block w-6 h-6">
             <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
             </svg>
@@ -74,7 +74,7 @@ const Nav = () => {
             </svg>
             <p></p>
         </div>
-        </div>
+        </div> */}
         
   
     </div>
@@ -84,13 +84,13 @@ const Nav = () => {
         initial='hidden'
         whileInView='show'
         viewport={{once: true, amount: 0.25}}
-        className='overflow-hidden w-full lg:hidden flex flex-1 justify-start gap-x-20 items-center pr-2  sm:mr-[4rem] mr-0 text-[#111]'>
+        className='overflow-hidden w-full lg:hidden flex flex-1 justify-start gap-x-20 items-center pr-2  sm:mr-[4rem] mr-0 text-[#000]'>
           
           <motion.div 
            variants={slideIn('left', 'spring', 0.1 , 0.8)}
            initial="hidden"
            whileInView="show"
-          className={`${!toggle ? "hidden" : "flex"}  p-6 fixed top-0 text-[#000] right-0 w-full h-screen bg-[#fff] z-10 flex flex-col justify-center items-center opacity-1`}
+          className={`${!toggle ? "hidden" : "flex"}  p-3 fixed top-0 text-[#000] right-0 w-full h-screen bg-[#fff] z-10 flex flex-col justify-center items-center opacity-1`}
           >
           
                 {/* inside mobile nav bar */}

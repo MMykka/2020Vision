@@ -7,11 +7,11 @@ import { footerLinks } from './constants'
 
 const Footer = () => {
   return (
-    <footer className='flex flex-col text-black mt-5 border-t border-gray-100 relative top-[90px]'>
+    <footer className='flex flex-col text-white relative top-[60px] bg-black'>
       <div className='flex max-md:flex-col flex-wrap justify-between gap-5 sm:px-16 px-6 py-10'>
         <div className='flex flex-col justify-start items-start gap-6'>
-            <Image src={visionlogo} alt='logo' width={90} height={18} className='object-contain'/>
-            <p className='text-base text-gray-700'>2020 Vision<br/> ALL RIGHT RESERVED &copy;</p>
+            <img src={'logo3.png'} alt='logo' width={90} height={18} className='object-contain'/>
+            <p className='text-base text-white'>2020 Vision<br/> ALL RIGHT RESERVED &copy;</p>
             <p>Phone Number: xx xxx xxx</p>
             <p>Address: xx xxx xxx</p>
             <p>Email: xx xxx xxx</p>
@@ -27,7 +27,7 @@ const Footer = () => {
                 <Link
                 key={item.title}
                 href={item.url}
-                className='text-gray-500'
+                className='text-white'
                 >
                   {item.title}
                 </Link>

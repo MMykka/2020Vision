@@ -13,16 +13,20 @@ module.exports = {
         'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
         "hero": "url('/images/watermark.jpg')",
       },
-      backgroundSize: {
-        'auto': 'auto',
-        'cover': 'cover',
-        'contain': 'contain',
-        '20': '20%',
-        '40': '40%',
-        '50': '50%',
-        '80': '80%',
-        '16': '4rem',
-      }
+      boxShadow: {
+        card: "0px 10px 50px -15px #00FFFF",
+      },
+      screens: {
+        'res1': '400px',
+        // => @media (min-width: 640px) { ... }
+        'res2': '500px',
+  
+        'lp': '1100px',
+        // => @media (min-width: 1024px) { ... }
+  
+        'desktop': '1280px',
+        // => @media (min-width: 1280px) { ... }
+      },
     },
   },
   plugins: [],
