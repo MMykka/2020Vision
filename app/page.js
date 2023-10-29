@@ -7,11 +7,12 @@ import { NewArrival } from '@/components/constants'
 export default function Home() {
 
   return (
-    <section className='relative z-0 w-full h-full mx-auto top-[60px] overflow bg-black'>
+    <section className='relative z-0 w-full h-full mx-auto overflow-hidden bg-[#eee]'>
       <Hero/>
       <BestSellerThree/>
-      <Products/>
+      <End/>
       <BestSeller/>
+      <EndTwo/>
     </section>
   )
 }

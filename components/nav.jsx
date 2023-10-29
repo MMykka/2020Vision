@@ -5,7 +5,8 @@ import Link from "next/link";
 import { navLinks } from './constants';
 import { visionlogo } from './images';
 import Image from 'next/image';
-import { motion } from "framer-motion";
+import { motion, useScroll } from "framer-motion";
+import { useRef } from 'react';
 
 import { fadeIn, navVariants, slideIn, staggerContainer } from "./utils/motion";
 import { CardContext } from '@/context/CardContext';
@@ -14,16 +15,29 @@ import CartProducts from './CartProducts';
 const Nav = () => {
     const [toggle, setToggle] = useState(false);
     const [toggleCart, setToggleCart] = useState(false);
-    const {cart, clearCart,total} = useContext(CardContext)
-    
+    const {cart, clearCart,total} = useContext(CardContext);
 
+    const [color, setColor] = useState(false);
+    const changeColor = () => {
+      if (window.scrollY >= 90) {
+        setColor(true);
+      }else {
+        setColor(false);
+      }
+    };
+
+    window.addEventListener('scroll', changeColor);
 
   return (
     <motion.nav
-     className="w-full py-2 sm:px-16 px-6 overflow-hidden fixed top-0 left-0 z-10 bg-white"
+    variants={navVariants}
+    initial="hidden"
+    whileInView="show"
+     className={`w-full py-2 sm:px-16 px-6 overflow-hidden fixed top-0 left-0 z-10 transition-all duration-500 ${color ? "bg-black py-0" : "bg-once"}`}
+
     >
     <div
-    className=' w-full flex justify-between lg:justify-center lg:p-5 items-center  mx-auto  duration-300 '
+    className=' w-full flex justify-between lg:justify-center lg:p-5 items-center  mx-auto  duration-300 text-white '
     >
         {/* <Link 
         href='/' 
@@ -48,7 +62,7 @@ const Nav = () => {
         </ul>
         
           <div 
-          className={` lg:hidden w-[28px] h-[28px]  object-contain cursor-pointer duration-300 text-[#000] ${toggle && 'hidden'}`}
+          className={` lg:hidden w-[28px] h-[28px]  object-contain cursor-pointer duration-300 text-[#fff] ${toggle && 'hidden'}`}
            onClick={() => setToggle(!toggle)}>
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
           <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12" />
@@ -62,7 +76,7 @@ const Nav = () => {
           window.scrollTo(0,0);
         }}
         >
-            <Image alt='logo' src={visionlogo} width={70} height={20}/> 
+            <img alt='logo' src={"logo3.png"} width={70} height={20}/> 
         </Link>
         {/* <div className='flex gap-4 lg:justify-start text-[#272727] '>
             <svg  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="hidden  lg:block w-6 h-6">
@@ -90,13 +104,12 @@ const Nav = () => {
            variants={slideIn('left', 'spring', 0.1 , 0.8)}
            initial="hidden"
            whileInView="show"
-          className={`${!toggle ? "hidden" : "flex"}  p-3 fixed top-0 text-[#000] right-0 w-full h-screen bg-[#fff] z-10 flex flex-col justify-center items-center opacity-1`}
+          className={`${!toggle ? "hidden" : "flex"}  p-3 fixed top-0 text-[#fff] right-0 w-full h-screen bg-[#fff] z-10 flex flex-col justify-center items-center opacity-1`}
           >
           
                 {/* inside mobile nav bar */}
             <div className='flex absolute top-5 right-0 px-5 text-[#000] justify-between w-full'>
             
-                <p className='text-[#111] font-poppins font-medium cursor-pointer text-[20px]'>LOGIN/REGISTER</p>
                 <img 
                 src={toggle ? 'close.svg' : 'menu.svg'}
                 alt='menu'

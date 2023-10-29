@@ -20,6 +20,7 @@
 }
 
 
+
 .vogue {
   font-family: vogue;
 }
@@ -31,26 +32,16 @@
   background-color: #eeebe2;
 }
 .bg-hero {
-  background-image: url('../components/images/bggirl.jpg');
+  background-image: url('../components/images/hero-bg.png');
   background-repeat: no-repeat;
   background-position: center;
 }
-.bg-prod1 {
-  background-image: url('../components/images/crystal2.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.bg-prod2 {
-  background-image: url('../components/images/book.jpg');
+.bg-loc {
+  background-image: url('../components/images/map-bg.png');
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.bg-hold {
-  background-image: url('../components/images/holding.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-}
 .blue {
   background-color: rgba(176, 217, 255, 0.671);
 }
