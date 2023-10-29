@@ -71,7 +71,7 @@ const BestSellerThree = () => {
         >
           {SunProducts.map((product, index) => (
             <SwiperSlide
-              key={product.name}
+              key={product.id}
               className="transition-all duration-125"
             >
               {({ isActive }) => (

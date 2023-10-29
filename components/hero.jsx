@@ -91,42 +91,42 @@ const Hero = () => {
             <SwiperSlide>
               <motion.div
                 variants={fadeIn("left","spring", 0.5, 0.5)}
-              className="w-[160px] h-[160px]" index="1">
+              className="w-[160px] h-[160px]">
                 <img src="AndyWolff.png" />
               </motion.div>
             </SwiperSlide>
             <SwiperSlide>
               <motion.div
                 variants={fadeIn("left","spring", 1, 0.5)}
-              className="w-[160px] h-[160px]" index="2">
+              className="w-[160px] h-[160px]" >
                 <img src="Dita.png" />
               </motion.div>
             </SwiperSlide>
             <SwiperSlide>
               <motion.div
                 variants={fadeIn("left","spring", 1.5, 0.5)}
-              className="w-[160px] h-[160px] object-fill" index="3">
+              className="w-[160px] h-[160px] object-fill">
                 <img src="Nikon.png" />
               </motion.div>
             </SwiperSlide>
             <SwiperSlide>
               <motion.div
                 variants={fadeIn("left","spring", 2, 0.5)}
-              className="w-[160px] h-[160px]" index="4">
+              className="w-[160px] h-[160px]">
                 <img src="PD.png" />
               </motion.div>
             </SwiperSlide>
             <SwiperSlide>
               <motion.div
                 variants={fadeIn("left","spring", 2.5, 0.5)}
-              className="w-[160px] h-[160px]" index="5">
+              className="w-[160px] h-[160px]">
                 <img src="RayBan.png" className="object-cover"/>
               </motion.div>
             </SwiperSlide>
             <SwiperSlide>
               <motion.div
                 variants={fadeIn("left","spring", 2.5, 0.5)}
-              className="w-[130px] h-[130px]" index="5">
+              className="w-[130px] h-[130px]">
                 <img src="Oakley.png" />
               </motion.div>
             </SwiperSlide>

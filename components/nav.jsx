@@ -24,7 +24,7 @@ const Nav = () => {
       setColor(false);
     }
   };
-  
+
   if (typeof window !== "undefined") {
   window.addEventListener("scroll", changeColor);
 }
