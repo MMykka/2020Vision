@@ -1,5 +1,3 @@
-import { Man, Woman } from "../images";
-export{ Man,Woman}
 
 export const navLinks = [
   {
@@ -38,22 +36,7 @@ export const navLinks = [
         title: "Contact",
     },
   ];
-  export const Sections = [
-    {
-      name: "GARAMOND",
-      title:"WOMEN SUNGLASSES",
-      image: Woman,
-      color: "beige"
-      
-    },
-    {
-      name: "WAYFARER",
-      title:"MEN SUNGLASSES",
-      image: Man,
-      color: "blue"
-    },
 
-  ];
 
   export const NewArrival = [
     {
