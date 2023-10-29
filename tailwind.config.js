@@ -14,7 +14,7 @@ module.exports = {
         "hero": "url('/images/watermark.jpg')",
       },
       boxShadow: {
-        card: "0px 10px 50px -15px #00FFFF",
+        card: "0px 10px 50px -15px #fff",
         card2: "0px 35px 90px -35px #1f1f1f",
       },
       screens: {

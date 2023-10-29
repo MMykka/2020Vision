@@ -10,7 +10,7 @@ const SunGlasses = ({ product, isActive }) => {
   const { addToCart } = useContext(CardContext);
   return (
     <div
-    className={`p-7 bg-[#222] w-full  sm:w-[300px] transitio-all duration-125 ${isActive? "transitio-all duration-125 shadow-card" : "transitio-opacity duration-125 opacity-90"}`}>
+    className={`p-7 bg-[#222] rounded-2xl w-full  sm:w-[300px] transitio-all duration-125 ${isActive? "transitio-all duration-125 shadow-card" : "transitio-opacity duration-125 opacity-90"}`}>
     <div className="relative w-full h-[200px] bg-white">
       <img src={'glasses4.png'} alt={'glasses'} className="w-full h-full object-contain rounded-lg"/>
     </div>

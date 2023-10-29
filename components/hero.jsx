@@ -55,7 +55,7 @@ const Hero = () => {
         <motion.div
         variants={fadeIn("up", "spring",0.5, 1)}
         className=" w-[400px]">
-          <img src="logo3.png" className="w-full h-full" />
+          <img src="logos2.png" className="w-full h-full" />
         </motion.div>
         <motion.div 
           variants={fadeIn("up", "spring",0.8, 1)}

@@ -17,12 +17,12 @@ const eyeProducts = EyeGlasse;
 const SunProducts = SunGlasse;
 
 const FeaturedGlasses = () => (
-  <div className="rounded-xl">
-    <div className="relative w-full h-[230px] bg-white">
+  <div className="rounded-2xl ">
+    <div className="relative w-full h-[230px] bg-white rounded-2xl">
       <img
         src={"glasses4.png"}
         alt={"glasses"}
-        className="w-full h-full object-contain rounded-lg"
+        className="w-full h-full object-contain rounded-2xl"
       />
     </div>
     <div className="text-black flex flex-col">
