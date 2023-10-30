@@ -46,9 +46,10 @@ const EndTwo = () => {
           </a>
         </motion.div>
       </motion.div>
-      <motion.button 
+      <motion.a 
+      href="tel:70482482"
       variants={fadeIn("up","spring", 0.5, 1)}
-      className="px-5 py-3 bg-black text-white rounded-2xl text-[13px] sm:text-[20px] font-medium my-5">CALL TO ACTION</motion.button>
+      className="px-5 py-3 bg-black text-white rounded-2xl text-[13px] sm:text-[20px] font-medium my-5">CALL TO ACTION</motion.a>
     </motion.section>
   );
 };
