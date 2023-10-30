@@ -138,7 +138,7 @@ const Hero = () => {
               <motion.div
                 variants={fadeIn("left","spring", 2.5, 0.5)}
               className="w-[130px] h-[130px] flex items-center">
-                <img src="Oakley.png" />
+                <img src="okley.png" />
               </motion.div>
             </SwiperSlide>
           </Swiper>
