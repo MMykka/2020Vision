@@ -70,9 +70,9 @@ const Hero = () => {
         </motion.div>
         <motion.div 
           variants={fadeIn("up", "spring",0.8, 1)}
-        className="w-full px-5 mx-auto lg:max-w-7xl text-white">
+        className="w-full px-20 sm:px-0 mx-auto lg:max-w-7xl text-white">
           <Swiper
-            slidesPerView={2}
+            slidesPerView={1}
             spaceBetween={0}
             modules={[Autoplay]}
             loop={true}
@@ -82,7 +82,7 @@ const Hero = () => {
             }}
             breakpoints={{
               400: {
-                slidesPerView: 2,
+                slidesPerView: 1,
                 spaceBetween: 200,
               },
               600: {
@@ -102,42 +102,42 @@ const Hero = () => {
             <SwiperSlide>
               <motion.div
                 variants={fadeIn("left","spring", 0.5, 0.5)}
-              className="w-[130px] h-[130px] flex ">
+              className=" w-full sm:w-[130px] h-[130px] flex ">
                 <img src="andy2.png" className="w-full h-full"/>
               </motion.div>
             </SwiperSlide>
             <SwiperSlide>
               <motion.div
                 variants={fadeIn("left","spring", 1, 0.5)}
-              className="w-[130px] h-[130px] flex items-center" >
+              className=" w-full sm:w-[130px] h-[130px] flex items-center" >
                 <img src="dita2.png"/>
               </motion.div>
             </SwiperSlide>
             <SwiperSlide>
               <motion.div
                 variants={fadeIn("left","spring", 1.5, 0.5)}
-              className="w-[130px] h-[130px] flex items-center">
+              className=" w-full sm:w-[130px] h-[130px] flex items-center">
                 <img src="nikon2.png" className="w-full h-full"/>
               </motion.div>
             </SwiperSlide>
             <SwiperSlide>
               <motion.div
                 variants={fadeIn("left","spring", 2, 0.5)}
-              className="w-[160px] h-[130px] flex items-center">
+              className="w-full sm:w-[160px] h-[130px] flex items-center">
                 <img src="PD.png" className="w-full h-full"/>
               </motion.div>
             </SwiperSlide>
             <SwiperSlide>
               <motion.div
                 variants={fadeIn("left","spring", 2.5, 0.5)}
-              className="w-[200px] h-[130px] flex items-center">
+              className="w-full sm:w-[200px] h-[130px] flex items-center">
                 <img src="RayBan.png" className="w-full h-full"/>
               </motion.div>
             </SwiperSlide>
             <SwiperSlide>
               <motion.div
                 variants={fadeIn("left","spring", 2.5, 0.5)}
-              className="w-[130px] h-[130px] flex items-center">
+              className="w-full sm:w-[130px] h-[130px] flex items-center">
                 <img src="okley.png" />
               </motion.div>
             </SwiperSlide>
