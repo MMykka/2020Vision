@@ -16,7 +16,7 @@ export default function Home() {
     const fakeDataFetch = () => {
       setTimeout(() => {
         setIsLoading(false);
-      }, 4000);
+      }, 5000);
     }
 
     fakeDataFetch();

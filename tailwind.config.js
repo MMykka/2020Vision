@@ -20,7 +20,7 @@ module.exports = {
       screens: {
         'res1': '400px',
         // => @media (min-width: 640px) { ... }
-        'r9': '600px',
+        'r10': '1000px',
         'res2': '500px',
         'res3': '800px',
   
