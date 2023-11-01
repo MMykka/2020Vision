@@ -114,14 +114,14 @@ const Hero = () => {
             <SwiperSlide>
               <motion.div
                 variants={fadeIn("left","spring", 2.5, 0.5)}
-              className="w-full sm:w-[130px] h-[130px] p-10 sm:p-0 sm:py-10 flex items-center">
+              className="w-full sm:w-[130px] h-[130px] p-10 px-20 sm:p-0 sm:py-10 flex items-center">
                 <img src="RayBan.png" className="w-full h-full"/>
               </motion.div>
             </SwiperSlide>
             <SwiperSlide>
               <motion.div
                 variants={fadeIn("left","spring", 2.5, 0.5)}
-              className="w-full  h-[130px] p-8 lg:p-5  sm:py-10 flex items-center object-center">
+              className="w-full  h-[130px] p-10 px-20  lg:p-5  sm:py-10 flex items-center object-center">
                 <img src="okley.png" className="w-full h-full"/>
               </motion.div>
             </SwiperSlide>
