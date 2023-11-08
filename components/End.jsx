@@ -49,13 +49,14 @@ const end = () => {
 
         <motion.div
         variants={slideIn("right","spring", 0.5, 1.5)}
-        className="w-full flex gap-5 justify-center">
-          <img className=" w-[40%] xl:w-[50%] " src="glass1.png" alt="photo" />
+        className="w-full flex gap-5 justify-center p-10 lg:p-0">
+          {/* <img className=" w-[40%] xl:w-[50%] " src="glass1.png" alt="photo" />
           <img
             className=" w-[40%] xl:w-[50%]"
             src="glass2.png"
             alt="photo"
-          />
+          /> */}
+          <img src="img22.jpg" alt="image" className="w-full "/>
         </motion.div>
       </motion.div>
     </motion.section>
