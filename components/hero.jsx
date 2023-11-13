@@ -28,7 +28,7 @@ const Hero = () => {
     className="">
       <section
       
-      className="relative max-w-[100%] mx-auto bg-[#000]">
+      className="relative max-w-[100%] mx-auto bg-[#000] h-screen">
       <motion.div 
       variants={fadeIn("up","spring", 0.3, 1)}
       className="h-screen w-full flex flex-col bg-hero bg-cover justify-center items-center">
@@ -62,13 +62,13 @@ const Hero = () => {
                   <img src="andy.png" alt="" height={"100px"} width={"300px"}/>
                 </div>
                 <div className="slide translate-y-4">
-                  <img src="dita.png" alt="" height={"100px"} width={"250px"}/>
+                  <img src="dita2 .png" alt="" height={"100px"} width={"250px"}/>
                 </div>
                 <div className="w-[450px] h-[100px] translate-y-3">
                   <img src="PD.png" alt="" height={"100px"} width={"450px"}/>
                 </div>
-                <div className="slide ">
-                  <img src="rayban.png" alt="" height={"100px"} width={"250px"}/>
+                <div className="slide">
+                  <img src="rayban2.png" alt="" height={"100px"} width={"250px"}/>
                 </div>
                 <div className="slide">
                   <img src="okley.png" alt="" height={"100px"} width={"250px"}/>
@@ -80,13 +80,13 @@ const Hero = () => {
                   <img src="andy.png" alt="" height={"100px"} width={"300px"}/>
                 </div>
                 <div className="slide translate-y-4">
-                  <img src="dita.png" alt="" height={"100px"} width={"250px"}/>
+                  <img src="dita2.png" alt="" height={"100px"} width={"250px"}/>
                 </div>
                 <div className="w-[450px] h-[100px] translate-y-3">
                   <img src="PD.png" alt="" height={"100px"} width={"450px"}/>
                 </div>
                 <div className="slide">
-                  <img src="rayban.png" alt="" height={"100px"} width={"250px"}/>
+                  <img src="rayban2.png" alt="" height={"100px"} width={"250px"}/>
                 </div>
             </div>
 
