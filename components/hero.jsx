@@ -62,7 +62,7 @@ const Hero = () => {
                   <img src="andy.png" alt="" height={"100px"} width={"300px"}/>
                 </div>
                 <div className="slide translate-y-4">
-                  <img src="dita2 .png" alt="" height={"100px"} width={"250px"}/>
+                  <img src="dita2.png" alt="" height={"100px"} width={"250px"}/>
                 </div>
                 <div className="w-[450px] h-[100px] translate-y-3">
                   <img src="PD.png" alt="" height={"100px"} width={"450px"}/>
