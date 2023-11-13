@@ -34,7 +34,7 @@ const BestSellerThree = () => {
         opacity: scrollYProgress,
       }}
     ref={ref}>
-      <section className="max-w-[100%] mx-auto relative bg-[#eee}">
+      <section className="max-w-[1600px] mx-auto relative bg-[#eee}">
       <div className="relative bottom-[40px] w-full px-5 res1:px-0  flex justify-center items-center transitio-all duration-125 ">
         <Swiper
           spaceBetween={0}
@@ -47,7 +47,7 @@ const BestSellerThree = () => {
             stretch: 0,
             depth: 150,
             modifier: 1,
-            slideShadows: true,
+            slideShadows: false,
           }}
           modules={[EffectCoverflow, Autoplay]}
           autoplay={{

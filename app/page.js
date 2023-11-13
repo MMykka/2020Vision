@@ -16,7 +16,7 @@ export default function Home() {
     const fakeDataFetch = () => {
       setTimeout(() => {
         setIsLoading(false);
-      }, 5000);
+      }, 1000);
     }
 
     fakeDataFetch();
@@ -27,10 +27,10 @@ export default function Home() {
     isLoading ? <Loader /> : <section className='relative z-0 w-full h-full mx-auto overflow-hidden bg-[#eee]'>
     <Nav />
     <Hero/>
-    <BestSellerThree/>
-    <End/>
-    <BestSeller/>
-    <EndTwo/>
+      <BestSellerThree/>
+      <End/>
+      <BestSeller/>
+      <EndTwo/>
   </section>
   )
 }

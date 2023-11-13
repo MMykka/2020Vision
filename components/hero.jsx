@@ -31,10 +31,10 @@ const Hero = () => {
       className="relative max-w-[100%] mx-auto bg-[#000]">
       <motion.div 
       variants={fadeIn("up","spring", 0.3, 1)}
-      className="h-[100vh] w-full flex flex-col bg-hero bg-cover justify-center items-center">
+      className="h-screen w-full flex flex-col bg-hero bg-cover justify-center items-center">
         <motion.div
         variants={fadeIn("up", "spring",0.5, 1)}
-        className=" w-[400px]">
+        className=" w-[400px] mb-5">
           <motion.div
           animate={{
             y: [0, 20, 0]
@@ -50,82 +50,46 @@ const Hero = () => {
         </motion.div>
         <motion.div 
           variants={fadeIn("up", "spring",0.8, 1)}
-        className="w-full px-10 sm:ml-10  mx-auto  text-white">
-          <Swiper
-            slidesPerView={1}
-            spaceBetween={0}
-            modules={[Autoplay]}
-            loop={true}
-            autoplay={{
-              delay: 2300,
-              disableOnInteraction: false,
-            }}
-            breakpoints={{
-              400: {
-                slidesPerView: 1,
-                spaceBetween: 200,
-              },
-              500: {
-                slidesPerView: 2,
-                spaceBetween: 50,
-              },
-              700: {
-                slidesPerView: 3,
-                spaceBetween: 50,
-              },
-              1000: {
-                slidesPerView: 6,
-                spaceBetween: 0,
-              },
-              1200: {
-                slidesPerView: 6,
-                spaceBetween: 0,
-              },
-            }}
-          >
-            <SwiperSlide>
-              <motion.div
-                variants={fadeIn("left","spring", 0.5, 0.5)}
-              className=" w-full px-20 sm:w-[160px]  sm:p-0 h-[130px] flex ">
-                <img src="andy2.png" className="w-full h-full"/>
-              </motion.div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <motion.div
-                variants={fadeIn("left","spring", 1, 0.5)}
-              className=" w-full sm:w-[100px] p-20 sm:p-0 h-[130px] flex items-center" >
-                <img src="dita2.png"/>
-              </motion.div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <motion.div
-                variants={fadeIn("left","spring", 1.5, 0.5)}
-              className=" w-full sm:w-[100px] px-20 sm:p-0 h-[130px] flex justify-center items-center">
-                <img src="nikon2.png" className="w-full h-full"/>
-              </motion.div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <motion.div
-                variants={fadeIn("left","spring", 2, 0.5)}
-              className="w-full sm:w-[180px] h-[130px]  flex items-center ">
-                <img src="PD.png" className="w-full h-full r10:-translate-x-10"/>
-              </motion.div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <motion.div
-                variants={fadeIn("left","spring", 2.5, 0.5)}
-              className="w-full sm:w-[130px] h-[130px] p-10 px-20 sm:p-0 sm:py-10 flex items-center">
-                <img src="RayBan.png" className="w-full h-full"/>
-              </motion.div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <motion.div
-                variants={fadeIn("left","spring", 2.5, 0.5)}
-              className="w-full  h-[130px] p-10 px-20  lg:p-10  sm:py-10  flex items-center object-center">
-                <img src="okley.png" className="w-full h-full xl:-translate-x-10"/>
-              </motion.div>
-            </SwiperSlide>
-          </Swiper>
+        className="slider">
+              <div className="slider-track">
+                <div className="slide">
+                  <img src="okley.png" alt="" height={"100px"} width={"250px"}/>
+                </div>
+                <div className="slide">
+                  <img src="nikon2.png" alt="" height={"100px"} width={"250px"}/>
+                </div>
+                <div className=" w-[300px] h-[100px] translate-y-8">
+                  <img src="andy.png" alt="" height={"100px"} width={"300px"}/>
+                </div>
+                <div className="slide translate-y-4">
+                  <img src="dita.png" alt="" height={"100px"} width={"250px"}/>
+                </div>
+                <div className="w-[450px] h-[100px] translate-y-3">
+                  <img src="PD.png" alt="" height={"100px"} width={"450px"}/>
+                </div>
+                <div className="slide ">
+                  <img src="rayban.png" alt="" height={"100px"} width={"250px"}/>
+                </div>
+                <div className="slide">
+                  <img src="okley.png" alt="" height={"100px"} width={"250px"}/>
+                </div>
+                <div className="slide">
+                  <img src="nikon2.png" alt="" height={"100px"} width={"250px"}/>
+                </div>
+                <div className=" w-[300px] h-[100px] translate-y-8">
+                  <img src="andy.png" alt="" height={"100px"} width={"300px"}/>
+                </div>
+                <div className="slide translate-y-4">
+                  <img src="dita.png" alt="" height={"100px"} width={"250px"}/>
+                </div>
+                <div className="w-[450px] h-[100px] translate-y-3">
+                  <img src="PD.png" alt="" height={"100px"} width={"450px"}/>
+                </div>
+                <div className="slide">
+                  <img src="rayban.png" alt="" height={"100px"} width={"250px"}/>
+                </div>
+            </div>
+
         </motion.div>
       </motion.div>
     </section>
